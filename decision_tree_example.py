@@ -11,6 +11,8 @@ features = [[140, 130, 120, 140], [130, 14, 180, 100], [140, 130, 120, 5], [130,
 labels = [0, 0, 1, 1]
 
 clf = tree.DecisionTreeClassifier()
+
+# teaching the classifier based on the above features and labels. Each array of features corresponds to a single label.
 clf = clf.fit(features, labels)
 
 print(clf.predict([[160, 150, 120, 100]]))  # returns predicted label for the imputed feature set
